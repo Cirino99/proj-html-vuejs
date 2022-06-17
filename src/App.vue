@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 * {
     margin: 0;
     padding: 0;
