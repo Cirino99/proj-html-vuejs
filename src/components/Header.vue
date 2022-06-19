@@ -2,7 +2,7 @@
     <header>
         <Nav />
         <section id="jumbotron">
-            <Carousel />
+            <Carousel :slides="juboData" />
         </section>
     </header>
 </template>
@@ -15,47 +15,21 @@ export default {
     components: { Nav, Carousel },
     data() {
         return {
-            navItem: [
+            juboData: [
                 {
-                    text: '',
-                    icon: '',
-                    img: null
+                    back: '../assets/img/h3-rev-img-1.png',
+                    img: '../assets/img/h3-rev-img-2.png'
                 },
                 {
-                    text: '',
-                    icon: null,
-                    img: null
+                    back: '../assets/img/h3-rev-img-3.png',
+                    img: '../assets/img/h3-rev-img-4.png'
                 },
                 {
-                    text: '',
-                    icon: null,
-                    img: null
-                },
-                {
-                    text: null,
-                    icon: null,
-                    img: ''
-                },
-                {
-                    text: '',
-                    icon: null,
-                    img: null
-                },
-                {
-                    text: '',
-                    icon: null,
-                    img: null
-                },
-                {
-                    text: '',
-                    icon: null,
-                    img: null
+                    back: '../assets/img/h3-rev-img-5.png',
+                    img: '../assets/img/h3-rev-img-6.png'
                 }
-            ],
-            jubotron: []
-
+            ]
         }
-
     }
 }
 </script>
