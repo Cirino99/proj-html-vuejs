@@ -34,7 +34,7 @@
                     <ul>
                         <li>
                             <strong>MONDAY</strong><br>
-                            <span>kitchen closed</span>
+                            <span>Kitchen Closed</span>
                         </li>
                         <li>
                             <strong>TUSEDAY UNTIL FRIDAY</strong><br>
@@ -72,7 +72,6 @@
             </div>
         </div>
         <div id="footer-img">
-            <img src="../assets/img/footer-img-1.jpg" alt="">
         </div>
 
     </footer>
@@ -87,6 +86,7 @@ export default {
 <style scoped lang="scss">
 footer {
     background-color: black;
+    height: 650px;
 
     #footer-text {
         width: 50%;
@@ -155,11 +155,9 @@ footer {
 
     #footer-img {
         width: 50%;
-
-        img {
-            width: 100%;
-            height: auto;
-        }
+        height: 100%;
+        background-image: url('../assets/img/footer-img-1.jpg');
+        background-position: center;
     }
 }
 </style>

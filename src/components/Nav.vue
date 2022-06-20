@@ -1,11 +1,21 @@
 <template>
     <div class="container-md">
         <nav class="d-flex justify-content-between align-items-center">
-            <div class="order-online"><span class="">Order online</span></div>
+            <div class="order-online"><span class="">ORDER ONLINE</span></div>
             <ul>
+                <!-- <li v-for="(item, i) in navItems" :key="i">
+                    <div v-if="item.img === null">
+                        <img v-if="item.icon !== null" :src="item.icon" alt="">
+                        <a :href="item.link">{{ item.text }}</a>
+                    </div>
+                    <img v-else :src="item.img" :alt="item.text">
+                </li> -->
                 <li>
-                    <img class="icon-svg" src="../assets/svg/svg-0.svg" alt="">
-                    <a href="#">Home</a>
+                    <div>
+                        <img src="../assets/svg/svg-0.svg" alt="">
+                        <a href="#">Home</a>
+                    </div>
+
                 </li>
                 <li>
                     <a href="#">Pages</a>
@@ -43,7 +53,10 @@
 
 <script>
 export default {
-    name: 'NavVue'
+    name: 'NavVue',
+    props: {
+        navItems: Array
+    }
 }
 </script>
 
@@ -64,9 +77,11 @@ nav {
             display: inline-block;
             margin: 0 20px;
 
-            .icon-svg {
-                width: 25px;
-                height: auto;
+            &:first-child {
+                img {
+                    width: 25px;
+                    height: auto;
+                }
             }
 
             a {

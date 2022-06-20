@@ -45,22 +45,22 @@
                     <div class="d-flex">
                         <div class="prezzo">
                             <h3>
-                                $10
+                                $20
                             </h3>
                         </div>
                         <div class="prodotto">
-                            <h3>COMBO PICCOLO</h3>
+                            <h3>COMBO MEZZO</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>
                         </div>
                     </div>
                     <div class="d-flex">
                         <div class="prezzo">
                             <h3>
-                                $10
+                                $30
                             </h3>
                         </div>
                         <div class="prodotto">
-                            <h3>COMBO PICCOLO</h3>
+                            <h3>COMBO GRANDE</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 <template>
     <header>
-        <Nav />
+        <Nav :navItems="navLink" />
         <section id="jumbotron">
             <Carousel :slides="juboData" />
         </section>
@@ -15,6 +15,51 @@ export default {
     components: { Nav, Carousel },
     data() {
         return {
+            navLink: [
+                {
+                    icon: '../assets/svg/svg-0.svg',
+                    text: 'HOME',
+                    link: '#',
+                    img: null
+                },
+                {
+                    icon: null,
+                    text: 'PAGES',
+                    link: '#',
+                    img: null
+                },
+                {
+                    icon: null,
+                    text: 'MENU',
+                    link: '#',
+                    img: null
+                },
+                {
+                    icon: null,
+                    text: 'logo',
+                    link: null,
+                    img: '../assets/img/h5-logo-divided-header.png'
+                },
+                {
+                    icon: null,
+                    text: 'EVENT',
+                    link: '#',
+                    img: null
+                },
+                {
+                    icon: null,
+                    text: 'BLOG',
+                    link: '#',
+                    img: null
+                },
+                {
+                    icon: null,
+                    text: 'LANDING',
+                    link: '#',
+                    img: null
+                }
+
+            ],
             juboData: [
                 {
                     back: '../assets/img/h3-rev-img-1.png',
