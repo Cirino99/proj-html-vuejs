@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center my-carousel">
         <div class="button-carousel prev" @click="prevSlide">
             <span>prev</span>
         </div>
@@ -57,8 +57,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-div {
-    margin-top: 20px;
+.my-carousel {
+    padding-top: 20px;
 
     .button-carousel {
         width: 40px;

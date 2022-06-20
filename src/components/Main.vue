@@ -142,6 +142,7 @@ main {
     }
 
     #specials {
+        margin: 10px 0;
 
         .my-col {
             width: 50%;

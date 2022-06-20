@@ -67,8 +67,7 @@
             </div>
             <div class="d-flex justify-content-between align-items-end" id="footer-created">
                 <p>Create with &#x2764; by <span>Qode Interactive</span></p>
-                <!-- img mancante -->
-                <!-- <img src="../assets/svg/svg-3.svg" alt=""> -->
+                <img src="../assets/img/footer-bottom-img.png" alt="">
             </div>
         </div>
         <div id="footer-img">
