@@ -49,6 +49,13 @@
                             9:00-22:00
                         </li>
                     </ul>
+                    <span>
+                        <strong>FOLLOW US:</strong>
+                        <font-awesome-icon icon="fa-brands fa-twitter" class="brand" />
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="brand" />
+                        <font-awesome-icon icon="fa-brands fa-instagram-square" class="brand" />
+                        <font-awesome-icon icon="fa-brands fa-linkedin-in" class="brand" />
+                    </span>
                 </div>
 
                 <div class="my-col">
@@ -58,7 +65,7 @@
 
                 </div>
             </div>
-            <div class="d-flex justify-content-between align-items-end" id="footer-social">
+            <div class="d-flex justify-content-between align-items-end" id="footer-created">
                 <p>Create with &#x2764; by <span>Qode Interactive</span></p>
                 <!-- img mancante -->
                 <!-- <img src="../assets/svg/svg-3.svg" alt=""> -->
@@ -87,16 +94,26 @@ footer {
 
         #footer-time {
             padding-top: 100px;
+            padding-right: 60px;
 
             .my-col {
                 width: calc(100% / 3);
 
                 h5 {
                     color: #B68A2C;
+                    font-size: 16px;
+                    font-weight: 600;
                 }
 
                 h4 {
                     color: white;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 35px;
+                }
+
+                strong {
+                    color: #B68A2C;
                 }
 
                 ul {
@@ -106,17 +123,24 @@ footer {
                         margin-top: 20px;
                         list-style-type: none;
                         color: #8f8f8f;
+                        font-size: 14px;
 
                         span {
                             color: #D2401E;
                         }
                     }
                 }
+
+                .brand {
+                    margin-left: 10px;
+                    color: white;
+                }
             }
         }
 
-        #footer-social {
+        #footer-created {
             padding-bottom: 50px;
+            font-size: 14px;
 
             p {
                 color: #B68A2C;
