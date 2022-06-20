@@ -85,7 +85,7 @@ export default {
 
 <style scoped lang="scss">
 footer {
-    background-color: black;
+    background-image: url('../assets/img/h3-rev-bckgrnd-ing.jpeg');
     height: 650px;
 
     #footer-text {

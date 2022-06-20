@@ -3,18 +3,22 @@
         <div class="button-carousel prev" @click="prevSlide">
             <span>prev</span>
         </div>
-        <!-- <div v-for="(slide, id) in slides" :key="id" class="slide" :class="id === 0 ? 'active' : ''"
+        <div v-for="(slide, id) in slides" :key="id" class="slide" :class="id === active ? 'active' : ''"
             :style="{ 'background-image': `url(${slide.back})` }">
-            <img :src="require(slide.img)" alt="">
-        </div> -->
-        <div class="slide slide1" :class="active === 1 ? 'active' : ''">
-            <img src="../assets/img/h3-rev-img-2.png" alt="">
-        </div>
-        <div class="slide slide2" :class="active === 2 ? 'active' : ''">
-            <img src="../assets/img/h3-rev-img-4.png" alt="">
-        </div>
-        <div class="slide slide3" :class="active === 3 ? 'active' : ''">
-            <img src="../assets/img/h3-rev-img-6.png" alt="">
+            <img v-if="slide.img" :src="slide.img" alt="">
+            <div v-else class="my-text-slide d-flex flex-column justify-content-center align-items-center">
+                <h2>"</h2>
+                <p>
+                    {{ slide.textReview }}
+                    <br>
+                    <span>{{ slide.textEditorial }}</span>
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="circle" :class="active === 0 ? 'active' : ''"></div>
+                    <div class="circle" :class="active === 1 ? 'active' : ''"></div>
+                    <div class="circle" :class="active === 2 ? 'active' : ''"></div>
+                </div>
+            </div>
         </div>
         <div class="button-carousel next" @click="nextSlide">
             <span>next</span>
@@ -30,20 +34,20 @@ export default {
     },
     data() {
         return {
-            active: 1
+            active: 0
         }
     },
     methods: {
         prevSlide() {
-            if (this.active === 1) {
-                this.active = 3;
+            if (this.active === 0) {
+                this.active = 2;
             } else {
                 this.active--;
             }
         },
         nextSlide() {
-            if (this.active === 3) {
-                this.active = 1;
+            if (this.active === 2) {
+                this.active = 0;
             } else {
                 this.active++;
             }
@@ -60,10 +64,10 @@ div {
         width: 40px;
         height: 80px;
         background-color: white;
-        color: #d2401e;
         display: flex;
         align-items: center;
         justify-content: center;
+        color: #efefe7;
 
         &.prev {
             border-radius: 0 40px 40px 0;
@@ -71,6 +75,7 @@ div {
 
             span {
                 transform: rotate(90deg);
+                color: #d2401e;
             }
         }
 
@@ -80,7 +85,12 @@ div {
 
             span {
                 transform: rotate(270deg);
+                color: #d2401e;
             }
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
 
@@ -106,6 +116,42 @@ div {
 
         &.active {
             display: flex;
+        }
+
+        .my-text-slide {
+            width: 50%;
+            min-width: 700px;
+            text-align: center;
+
+            h2 {
+                font-size: 150px;
+                margin-bottom: 0;
+                color: #b7903c;
+            }
+
+            p {
+                font-size: 25px;
+                transform: translate(0, -80px);
+                font-weight: 600;
+
+                span {
+                    color: #d2401e;
+                    font-size: 14px;
+                }
+            }
+
+            .circle {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #e4e4d4;
+                transform: translate(0, -100px);
+                margin: 0 5px;
+
+                &.active {
+                    background-color: #b7903c;
+                }
+            }
         }
     }
 }

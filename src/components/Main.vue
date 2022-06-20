@@ -17,7 +17,7 @@
         </section>
         <!-- carosello -->
         <section id="carousel">
-            <Carousel />
+            <Carousel :slides="carouselData" />
             <div class="icon-absolute d-flex justify-content-center align-items-center">
                 <img src="../assets/svg/svg-4.svg" alt="">
             </div>
@@ -77,7 +77,28 @@
 import Carousel from './Carousel.vue';
 export default {
     name: "MainVue",
-    components: { Carousel }
+    components: { Carousel },
+    data() {
+        return {
+            carouselData: [
+                {
+                    back: require('../assets/img/carousel-main.jpg'),
+                    textReview: '"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"',
+                    textEditorial: 'WASHINGTON POST 2018'
+                },
+                {
+                    back: require('../assets/img/carousel-main.jpg'),
+                    textReview: '"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"',
+                    textEditorial: 'WASHINGTON POST 2018'
+                },
+                {
+                    back: require('../assets/img/carousel-main.jpg'),
+                    textReview: '"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"',
+                    textEditorial: 'WASHINGTON POST 2018'
+                }
+            ]
+        }
+    }
 }
 </script>
 

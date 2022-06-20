@@ -17,7 +17,7 @@ export default {
         return {
             navLink: [
                 {
-                    icon: '../assets/svg/svg-0.svg',
+                    icon: require('../assets/svg/svg-0.svg'),
                     text: 'HOME',
                     link: '#',
                     img: null
@@ -38,7 +38,7 @@ export default {
                     icon: null,
                     text: 'logo',
                     link: null,
-                    img: '../assets/img/h5-logo-divided-header.png'
+                    img: require('../assets/img/h5-logo-divided-header.png')
                 },
                 {
                     icon: null,
@@ -62,16 +62,16 @@ export default {
             ],
             juboData: [
                 {
-                    back: '../assets/img/h3-rev-img-1.png',
-                    img: '../assets/img/h3-rev-img-2.png'
+                    back: require('../assets/img/h3-rev-img-1.png'),
+                    img: require('../assets/img/h3-rev-img-2.png')
                 },
                 {
-                    back: '../assets/img/h3-rev-img-3.png',
-                    img: '../assets/img/h3-rev-img-4.png'
+                    back: require('../assets/img/h3-rev-img-3.png'),
+                    img: require('../assets/img/h3-rev-img-4.png')
                 },
                 {
-                    back: '../assets/img/h3-rev-img-5.png',
-                    img: '../assets/img/h3-rev-img-6.png'
+                    back: require('../assets/img/h3-rev-img-5.png'),
+                    img: require('../assets/img/h3-rev-img-6.png')
                 }
             ]
         }
@@ -81,7 +81,7 @@ export default {
 
 <style scoped lang="scss">
 header {
-    background-color: black;
+    background-image: url('../assets/img/h3-rev-bckgrnd-ing.jpeg');
     height: 700px;
 }
 </style>
