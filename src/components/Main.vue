@@ -14,12 +14,18 @@
                 <img src="../assets/img/h3-img-4.jpg" alt="">
             </div>
         </section>
+        <section id="carousel">
+            <Carousel />
+        </section>
+
     </main>
 </template>
 
 <script>
+import Carousel from './Carousel.vue';
 export default {
-    name: 'MainVue'
+    name: "MainVue",
+    components: { Carousel }
 }
 </script>
 
