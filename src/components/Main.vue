@@ -18,6 +18,9 @@
         <!-- carosello -->
         <section id="carousel">
             <Carousel />
+            <div class="icon-absolute d-flex justify-content-center align-items-center">
+                <img src="../assets/svg/svg-4.svg" alt="">
+            </div>
         </section>
         <!-- special -->
         <section class="d-flex" id="specials">
@@ -80,6 +83,17 @@ export default {
 
 <style scoped lang="scss">
 main {
+    .icon-absolute {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: #f6f7f2;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+
     #phrases-pizza {
 
         div {
@@ -99,6 +113,11 @@ main {
                 height: auto;
             }
         }
+    }
+
+    #carousel {
+        background-color: #f6f7f2;
+        position: relative;
     }
 
     #specials {
@@ -143,20 +162,7 @@ main {
                         }
                     }
                 }
-
-                .icon-absolute {
-                    position: absolute;
-                    bottom: 0;
-                    right: 20px;
-                    background-color: #f6f7f2;
-                    border-radius: 50%;
-                    width: 50px;
-                    height: 50px;
-                    padding: 0;
-                }
             }
-
-
         }
     }
 }
