@@ -220,7 +220,34 @@
             </div>
             <div class="my-col">
                 <img src="../assets/img/h3-img-5a.jpg" alt="">
+                <div id="icona-delish-deals">
+                    <img src="../assets/svg/svg-9.svg" alt="">
+                </div>
             </div>
+        </section>
+        <!-- book table -->
+        <section class="d-flex justify-content-center align-items-center" id="book-table">
+            <div class="book-detail">
+                <input type="text" placeholder="1 person">
+                <font-awesome-icon class="icon-book" icon="fa-solid fa-user-group" />
+            </div>
+            <h4>
+                FOR
+            </h4>
+            <div class="book-detail">
+                <input type="text" placeholder="11/29/2020">
+                <font-awesome-icon class="icon-book" icon="fa-regular fa-calendar" />
+            </div>
+            <h4>
+                AT
+            </h4>
+            <div class="book-detail">
+                <input type="text" placeholder="7:00 pm">
+                <font-awesome-icon class="icon-book" icon="fa-regular fa-clock" />
+            </div>
+            <span class="d-flex justify-content-center align-items-center" id="reserve">
+                BOOK A TABLE
+            </span>
         </section>
     </main>
 </template>
@@ -480,6 +507,7 @@ main {
     #delish-deals {
         .my-col {
             width: 50%;
+            position: relative;
 
             &:last-child {
                 img {
@@ -547,6 +575,70 @@ main {
                         }
                     }
                 }
+            }
+
+            #icona-delish-deals {
+                background-color: white;
+                width: 40px;
+                height: 40px;
+                padding: 0 !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    #book-table {
+        margin: 10px 0;
+        padding: 120px 0;
+        background-image: url('../assets/img/h3-background-img-3.jpg');
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+
+        .book-detail {
+            position: relative;
+
+            input {
+                padding: 15px;
+                border: solid 1px black;
+            }
+
+            .icon-book {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 20px;
+                height: auto;
+                transform: translate(-50%, -50%);
+                color: #ffa323;
+            }
+        }
+
+        h4 {
+            font-size: 18px;
+            color: white;
+            margin: 0 20px;
+        }
+
+        #reserve {
+            height: 56px;
+            width: 200px;
+            background-color: #d2401e;
+            font-size: 14px;
+            color: white;
+            margin-left: 50px;
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }
