@@ -70,6 +70,23 @@
                 </div>
             </div>
         </section>
+        <!-- mosaic -->
+        <section id="mosaico">
+            <div id="mosaico-top"></div>
+            <div id="mosaico-center">
+                <h2>
+                    GO AHEAD AND <br>
+                    BUILD YOUR <br>
+                    OWN PIZZA <br>
+                    WE WON'T <br>
+                    JUDGE! <br>
+                </h2>
+                <div class="icon-absolute d-flex justify-content-center align-items-center">
+                    <img src="../assets/svg/svg-4.svg" alt="">
+                </div>
+            </div>
+            <div id="mosaico-bottom"></div>
+        </section>
     </main>
 </template>
 
@@ -185,6 +202,42 @@ main {
                     }
                 }
             }
+        }
+    }
+
+    #mosaico {
+
+        height: 600px;
+
+        #mosaico-top {
+            background-image: url('../assets/img/h3-background-img.jpg');
+            background-repeat: repeat;
+            background-position: 1000% 100%;
+            height: 25%;
+            background-attachment: local;
+        }
+
+        #mosaico-center {
+            background-image: url('../assets/img/h3-background-img.jpg');
+            background-repeat: repeat;
+            background-position: 1000% 0%;
+            height: 50%;
+            position: relative;
+
+            h2 {
+                font-size: 60px;
+                font-weight: 600;
+                color: white;
+                margin: 0 150px;
+                transform: translate(0, -10%);
+            }
+        }
+
+        #mosaico-bottom {
+            background-image: url('../assets/img/h3-background-img.jpg');
+            background-repeat: repeat;
+            background-position: 1000% 65%;
+            height: 25%;
         }
     }
 }
