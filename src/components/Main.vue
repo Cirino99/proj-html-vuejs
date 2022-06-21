@@ -282,12 +282,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/vars.scss";
+
 main {
     .icon-absolute {
         position: absolute;
         bottom: 20px;
         right: 20px;
-        background-color: #f6f7f2;
+        background-color: $background7;
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -321,7 +323,7 @@ main {
     }
 
     #carousel {
-        background-color: #f6f7f2;
+        background-color: $background7;
         position: relative;
     }
 
@@ -346,13 +348,13 @@ main {
                 }
 
                 p {
-                    color: #858585;
+                    color: $text10;
                     margin-bottom: 20px;
                 }
 
                 div {
                     .prezzo {
-                        color: #AB4027;
+                        color: $text13;
                     }
 
                     h3 {
@@ -364,7 +366,7 @@ main {
                         padding-left: 20px;
 
                         p {
-                            color: #8F8F8F;
+                            color: $text8;
                         }
                     }
                 }
@@ -396,7 +398,7 @@ main {
             h2 {
                 font-size: 60px;
                 font-weight: 600;
-                color: white;
+                color: $text1;
                 margin-left: 20%;
                 transform: translate(0, -10%);
             }
@@ -422,7 +424,7 @@ main {
     }
 
     #labels {
-        background-color: #f6f7f2;
+        background-color: $background7;
         min-height: 300px;
     }
 
@@ -438,7 +440,7 @@ main {
                 width: 35%;
 
                 span {
-                    color: #d2401e;
+                    color: $text12;
                     font-size: 13px;
                     font-weight: 600;
                 }
@@ -450,7 +452,7 @@ main {
                 }
 
                 p {
-                    color: #767676;
+                    color: $text11;
                 }
             }
         }
@@ -471,13 +473,13 @@ main {
                 h5 {
                     font-size: 18px;
                     font-weight: 600;
-                    color: #b68a2c;
+                    color: $text7;
 
                     &:last-child {
-                        color: #d2401e;
+                        color: $text12;
 
                         span {
-                            color: #cdcdcd;
+                            color: $text3;
                             text-decoration: line-through;
                         }
                     }
@@ -485,7 +487,7 @@ main {
             }
 
             #icona-choose-flavor {
-                background-color: #ee2852;
+                background-color: $background15;
                 width: 40px;
                 height: 40px;
                 padding: 0 !important;
@@ -522,20 +524,20 @@ main {
                 background-image: url('../assets/img/h3-rev-bckgrnd-ing.jpeg');
 
                 span {
-                    color: #d2401e;
+                    color: $text12;
                     font-size: 12px;
                 }
 
                 h2 {
                     font-weight: 700;
                     font-size: 38px;
-                    color: white;
+                    color: $text1;
                 }
 
                 .luogo-data {
                     margin-top: 20px;
                     padding-bottom: 20px;
-                    border-bottom: dotted 2px #ffa500;
+                    border-bottom: dotted 2px $border4;
 
                     &:last-child {
                         border-bottom: none;
@@ -545,14 +547,14 @@ main {
                     .data {
 
                         p {
-                            color: white;
+                            color: $text1;
                             font-size: 20px;
                             margin-top: -15px;
 
                             .day {
                                 font-weight: 600;
                                 font-size: 55px;
-                                color: #AB4027;
+                                color: $text13;
                             }
                         }
                     }
@@ -561,11 +563,11 @@ main {
                         padding-left: 20px;
 
                         p {
-                            color: white;
+                            color: $text1;
                             font-size: 20px;
 
                             span {
-                                color: #d2401e;
+                                color: $text12;
                                 font-size: 12px;
 
                                 .here {
@@ -578,7 +580,7 @@ main {
             }
 
             #icona-delish-deals {
-                background-color: white;
+                background-color: $background1;
                 width: 40px;
                 height: 40px;
                 padding: 0 !important;
@@ -609,7 +611,7 @@ main {
 
             input {
                 padding: 15px;
-                border: solid 1px black;
+                border: solid 1px $border6;
             }
 
             .icon-book {
@@ -619,22 +621,22 @@ main {
                 width: 20px;
                 height: auto;
                 transform: translate(-50%, -50%);
-                color: #ffa323;
+                color: $text7;
             }
         }
 
         h4 {
             font-size: 18px;
-            color: white;
+            color: $text1;
             margin: 0 20px;
         }
 
         #reserve {
             height: 56px;
             width: 200px;
-            background-color: #d2401e;
+            background-color: $background16;
             font-size: 14px;
-            color: white;
+            color: $text1;
             margin-left: 50px;
 
             &:hover {

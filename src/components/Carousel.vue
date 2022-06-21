@@ -57,17 +57,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/vars.scss";
+
 .my-carousel {
     padding-top: 20px;
 
     .button-carousel {
         width: 40px;
         height: 80px;
-        background-color: white;
+        background-color: $background1;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #efefe7;
 
         &.prev {
             border-radius: 0 40px 40px 0;
@@ -75,7 +76,7 @@ export default {
 
             span {
                 transform: rotate(90deg);
-                color: #d2401e;
+                color: $text12;
             }
         }
 
@@ -85,7 +86,7 @@ export default {
 
             span {
                 transform: rotate(270deg);
-                color: #d2401e;
+                color: $background16;
             }
         }
 
@@ -126,7 +127,7 @@ export default {
             h2 {
                 font-size: 150px;
                 margin-bottom: 0;
-                color: #b7903c;
+                color: $text6;
             }
 
             p {
@@ -135,7 +136,7 @@ export default {
                 font-weight: 600;
 
                 span {
-                    color: #d2401e;
+                    color: $text12;
                     font-size: 14px;
                 }
             }
@@ -144,12 +145,12 @@ export default {
                 height: 10px;
                 width: 10px;
                 border-radius: 50%;
-                background-color: #e4e4d4;
+                background-color: $background9;
                 transform: translate(0, -100px);
                 margin: 0 5px;
 
                 &.active {
-                    background-color: #b7903c;
+                    background-color: $background12;
                 }
             }
         }

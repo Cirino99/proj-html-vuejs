@@ -10,7 +10,8 @@ import { faUserGroup } from '@fortawesome/free-solid-svg-icons'
 import { faCalendar } from '@fortawesome/free-regular-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-library.add(faTwitter, faFacebookF, faInstagramSquare, faLinkedinIn, faLocationDot, faUserGroup, faCalendar, faClock);
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+library.add(faTwitter, faFacebookF, faInstagramSquare, faLinkedinIn, faLocationDot, faUserGroup, faCalendar, faClock, faMagnifyingGlass);
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false

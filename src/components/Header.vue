@@ -80,6 +80,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/vars.scss";
+
 header {
     background-image: url('../assets/img/h3-rev-bckgrnd-ing.jpeg');
     height: 700px;

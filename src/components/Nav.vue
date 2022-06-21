@@ -12,14 +12,14 @@
                 </li>
             </ul>
             <div class="search d-flex">
-                <div class="d-flex cart">
+                <div class="d-flex align-items-center cart">
                     <span id="cart-number">0</span>
                     <img src="../assets/svg/svg-1.svg" alt="">
-                    <span>Cart</span>
+                    <span>CART</span>
                 </div>
-                <div class="d-flex">
-                    <img src="../assets/svg/svg-1.svg" alt="">
-                    <span>Search</span>
+                <div class="d-flex align-items-center">
+                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                    <span>SEARCH</span>
                 </div>
             </div>
         </nav>
@@ -36,13 +36,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/vars.scss";
+
 nav {
     padding-top: 25px;
-    color: white;
+    color: $text1;
 
     .order-online {
         padding: 10px 25px;
-        background-color: #d2401e;
+        background-color: $background16;
     }
 
     ul {
@@ -61,7 +63,7 @@ nav {
 
             a {
                 text-decoration: none;
-                color: white;
+                color: $text1;
             }
 
             img {
@@ -75,6 +77,7 @@ nav {
 
         .cart {
             position: relative;
+            margin-right: 20px;
 
             #cart-number {
                 position: absolute;
@@ -85,7 +88,7 @@ nav {
                 justify-content: center;
                 border-radius: 50%;
                 background-color: white;
-                color: #d2401e;
+                color: $background16;
                 font-size: 10px;
                 top: 0;
                 left: -5px;

@@ -83,6 +83,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/vars.scss";
+
 footer {
     background-image: url('../assets/img/h3-rev-bckgrnd-ing.jpeg');
     height: 650px;
@@ -99,20 +101,20 @@ footer {
                 width: calc(100% / 3);
 
                 h5 {
-                    color: #B68A2C;
+                    color: $text7;
                     font-size: 16px;
                     font-weight: 600;
                 }
 
                 h4 {
-                    color: white;
+                    color: $text1;
                     font-size: 20px;
                     font-weight: 600;
                     line-height: 35px;
                 }
 
                 strong {
-                    color: #B68A2C;
+                    color: $text7;
                 }
 
                 ul {
@@ -121,18 +123,18 @@ footer {
                     li {
                         margin-top: 20px;
                         list-style-type: none;
-                        color: #8f8f8f;
+                        color: $text8;
                         font-size: 14px;
 
                         span {
-                            color: #D2401E;
+                            color: $text12;
                         }
                     }
                 }
 
                 .brand {
                     margin-left: 10px;
-                    color: white;
+                    color: $text1;
                 }
             }
         }
@@ -142,14 +144,13 @@ footer {
             font-size: 14px;
 
             p {
-                color: #B68A2C;
+                color: $text7;
 
                 span {
-                    color: #339966;
+                    color: $text9;
                 }
             }
         }
-
     }
 
     #footer-img {
