@@ -4,15 +4,35 @@
         <section class="d-flex" id="phrases-pizza">
             <div>
                 <img src="../assets/img/h3-img-1.jpg" alt="">
+                <div class="hover-phrases justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <font-awesome-icon class="icon-eye " icon="fa-regular fa-eye" />
+                    </div>
+                </div>
             </div>
             <div>
                 <img src="../assets/img/h3-img-2.jpg" alt="">
+                <div class="hover-phrases justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <font-awesome-icon class="icon-eye " icon="fa-regular fa-eye" />
+                    </div>
+                </div>
             </div>
             <div>
                 <img src="../assets/img/h3-img-3.jpg" alt="">
+                <div class="hover-phrases justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <font-awesome-icon class="icon-eye " icon="fa-regular fa-eye" />
+                    </div>
+                </div>
             </div>
             <div>
                 <img src="../assets/img/h3-img-4.jpg" alt="">
+                <div class="hover-phrases justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <font-awesome-icon class="icon-eye " icon="fa-regular fa-eye" />
+                    </div>
+                </div>
             </div>
         </section>
         <!-- carosello -->
@@ -302,10 +322,10 @@ main {
     }
 
     #phrases-pizza {
-
         div {
             width: 25%;
             padding: 10px 5px;
+            position: relative;
 
             &:first-child {
                 padding-left: 0;
@@ -318,6 +338,32 @@ main {
             img {
                 width: 100%;
                 height: auto;
+            }
+
+            &:hover .hover-phrases {
+                display: flex;
+            }
+
+            .hover-phrases {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $background1;
+                display: none;
+
+                div {
+                    background-color: $background16;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+
+                    .icon-eye {
+                        color: $text1;
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }
