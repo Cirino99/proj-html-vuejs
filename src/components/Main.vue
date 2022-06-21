@@ -156,6 +156,72 @@
                 </div>
             </div>
         </section>
+        <!-- delish deals -->
+        <section class="d-flex" id="delish-deals">
+            <div class="my-col">
+                <div class="d-flex flex-column justify-content-center align-items-start" id="location-deals">
+                    <span>MADE WITH LOVE</span>
+                    <h2>DELISH PIZZA DEALS</h2>
+                    <div class="d-flex luogo-data">
+                        <div class="data">
+                            <p>
+                                <span class="day">
+                                    02
+                                </span>
+                                NOV
+                            </p>
+                        </div>
+                        <div class="luogo">
+                            <p>TRADITIONAL NEAPOLITAN PIES IN KYOTO PIZZA MERCATO <br>
+                                <span>
+                                    <font-awesome-icon class="here" icon="fa-solid fa-location-dot" />204 E. Pizzetta
+                                    Tommaso
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex luogo-data">
+                        <div class="data">
+                            <p>
+                                <span class="day">
+                                    03
+                                </span>
+                                NOV
+                            </p>
+                        </div>
+                        <div class="luogo">
+                            <p>TERARAZZA PATIO DINING SPACE OPENING THIS WEEKEND <br>
+                                <span>
+                                    <font-awesome-icon class="here" icon="fa-solid fa-location-dot" />204 E. Pizzetta
+                                    Tommaso
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex luogo-data">
+                        <div class="data">
+                            <p>
+                                <span class="day">
+                                    04
+                                </span>
+                                NOV
+                            </p>
+                        </div>
+                        <div class="luogo">
+                            <p>SIENNA PRIVATE DINING ROOM WITH STEPHANE BRUNN <br>
+                                <span>
+                                    <font-awesome-icon class="here" icon="fa-solid fa-location-dot" />204 E. Pizzetta
+                                    Tommaso
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-col">
+                <img src="../assets/img/h3-img-5a.jpg" alt="">
+            </div>
+        </section>
     </main>
 </template>
 
@@ -371,7 +437,7 @@ main {
                 width: calc(100% / 6);
 
                 img {
-                    width: 270px;
+                    width: 240px;
                     height: auto;
                 }
 
@@ -406,6 +472,80 @@ main {
                 img {
                     width: 70%;
                     height: auto;
+                }
+            }
+        }
+    }
+
+    #delish-deals {
+        .my-col {
+            width: 50%;
+
+            &:last-child {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            #location-deals {
+                position: relative;
+                padding: 100px 220px;
+                background-image: url('../assets/img/h3-rev-bckgrnd-ing.jpeg');
+
+                span {
+                    color: #d2401e;
+                    font-size: 12px;
+                }
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 38px;
+                    color: white;
+                }
+
+                .luogo-data {
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: dotted 2px #ffa500;
+
+                    &:last-child {
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
+
+                    .data {
+
+                        p {
+                            color: white;
+                            font-size: 20px;
+                            margin-top: -15px;
+
+                            .day {
+                                font-weight: 600;
+                                font-size: 55px;
+                                color: #AB4027;
+                            }
+                        }
+                    }
+
+                    .luogo {
+                        padding-left: 20px;
+
+                        p {
+                            color: white;
+                            font-size: 20px;
+
+                            span {
+                                color: #d2401e;
+                                font-size: 12px;
+
+                                .here {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
