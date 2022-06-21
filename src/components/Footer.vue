@@ -3,48 +3,22 @@
         <div class="d-flex flex-column justify-content-between" id="footer-text">
             <div class="d-flex" id="footer-time">
                 <div class="my-col">
-                    <h5>FIND OUR RESTAURANT</h5>
+                    <h5>{{ listRestaurant.title }}</h5>
                     <ul>
-                        <li>
-                            1614 E. Bell Rd #104 <br>
-                            Salerno, AZ 85022 <br>
-                            (602) 867-1010
-                        </li>
-                        <li>
-                            204 E. Pizzetta Tommaso <br>
-                            Sorrento, AZ 85022 <br>
-                            (358) 867-1010
-                        </li>
-                        <li>
-                            Vale Puglia 54 <br>
-                            Torre Del Grego, AZ 85022 <br>
-                            (359) 867-1010
-                        </li>
-                        <li>
-                            Corso Itali AA <br>
-                            Naples, AZ 85022 <br>
-                            (989) 867-1010
+                        <li v-for="(restaurant, id) in listRestaurant.restaurants" :key="id">
+                            {{ restaurant.via }}<br>
+                            {{ restaurant.city }}<br>
+                            {{ restaurant.phone }}
                         </li>
                     </ul>
                 </div>
                 <div class="my-col">
-                    <h5>WORKING HOURS</h5>
+                    <h5>{{ listHours.title }}</h5>
                     <ul>
-                        <li>
-                            <strong>MONDAY</strong><br>
-                            <span>Kitchen Closed</span>
-                        </li>
-                        <li>
-                            <strong>TUSEDAY UNTIL FRIDAY</strong><br>
-                            9:00-22:00
-                        </li>
-                        <li>
-                            <strong>SATURDAY</strong><br>
-                            Saturday 11am to midnight
-                        </li>
-                        <li>
-                            <strong>SUNDAY</strong><br>
-                            9:00-22:00
+                        <li v-for="(hour, id) in listHours.hours" :key="id + 4">
+                            <strong>{{ hour.day }}</strong><br>
+                            <span v-if="hour.time === null">{{ hour.work }}</span>
+                            {{ hour.time }}
                         </li>
                     </ul>
                     <span>
@@ -57,9 +31,8 @@
                 </div>
                 <div class="my-col">
                     <h4>
-                        THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.
+                        {{ phraseFooter }}
                     </h4>
-
                 </div>
             </div>
             <div class="d-flex justify-content-between align-items-end" id="footer-created">
@@ -75,7 +48,59 @@
 
 <script>
 export default {
-    name: 'FooterVue'
+    name: 'FooterVue',
+    data() {
+        return {
+            listRestaurant: {
+                title: 'FIND OUR RESTAURANT',
+                restaurants: [
+                    {
+                        via: '1614 E. Bell Rd #104',
+                        city: 'Salerno, AZ 85022',
+                        phone: '(602) 867-1010'
+                    },
+                    {
+                        via: '204 E. Pizzetta Tommaso',
+                        city: 'Sorrento, AZ 85022',
+                        phone: '(358) 867-1010'
+                    },
+                    {
+                        via: 'Vale Puglia 54',
+                        city: 'Torre Del Grego, AZ 85022',
+                        phone: '(359) 867-1010'
+                    },
+                    {
+                        via: 'Corso Itali AA',
+                        city: 'Naples, AZ 85022',
+                        phone: '(989) 867-1010'
+                    }
+                ]
+            },
+            listHours: {
+                title: 'WORKING HOURS',
+                hours: [
+                    {
+                        day: 'MONDAY',
+                        work: 'Kitchen Closed',
+                        time: null
+                    },
+                    {
+                        day: 'TUSEDAY UNTIL FRIDAY',
+                        time: '9:00-22:00'
+                    },
+                    {
+                        day: 'SATURDAY',
+                        time: 'Saturday 11am to midnight'
+                    },
+                    {
+                        day: 'SUNDAY',
+                        time: '9:00-22:00'
+                    }
+                ]
+            },
+            phraseFooter: 'THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.'
+        }
+    }
 }
 </script>
 
