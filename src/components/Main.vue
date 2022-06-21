@@ -212,7 +212,8 @@ main {
         #mosaico-top {
             background-image: url('../assets/img/h3-background-img.jpg');
             background-repeat: repeat;
-            background-position: 1000% 100%;
+            background-size: calc(100% - 300px);
+            background-position: 50% 100%;
             height: 25%;
             background-attachment: local;
         }
@@ -220,7 +221,8 @@ main {
         #mosaico-center {
             background-image: url('../assets/img/h3-background-img.jpg');
             background-repeat: repeat;
-            background-position: 1000% 0%;
+            background-size: calc(100% - 300px);
+            background-position: 50% 0%;
             height: 50%;
             position: relative;
 
@@ -228,7 +230,7 @@ main {
                 font-size: 60px;
                 font-weight: 600;
                 color: white;
-                margin: 0 150px;
+                margin-left: 20%;
                 transform: translate(0, -10%);
             }
         }
@@ -236,7 +238,8 @@ main {
         #mosaico-bottom {
             background-image: url('../assets/img/h3-background-img.jpg');
             background-repeat: repeat;
-            background-position: 1000% 65%;
+            background-size: calc(100% - 300px);
+            background-position: 50% 65%;
             height: 25%;
         }
     }
