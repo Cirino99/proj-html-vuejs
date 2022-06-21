@@ -432,7 +432,7 @@ main {
         margin: 10px 0;
 
         .choose-flavor-txt {
-            padding-top: 70px;
+            padding-top: 100px;
             padding-bottom: 40px;
             position: relative;
 
@@ -446,13 +446,14 @@ main {
                 }
 
                 h2 {
-                    font-size: 30px;
+                    font-size: 32px;
                     font-weight: 600;
                     margin: 15px 0;
                 }
 
                 p {
                     color: $text11;
+                    font-size: 18px;
                 }
             }
         }

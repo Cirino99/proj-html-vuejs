@@ -27,10 +27,8 @@
                         </li>
                     </ul>
                 </div>
-
-
                 <div class="my-col">
-                    <h5>FIND OUR RESTAURANT</h5>
+                    <h5>WORKING HOURS</h5>
                     <ul>
                         <li>
                             <strong>MONDAY</strong><br>
@@ -57,7 +55,6 @@
                         <font-awesome-icon icon="fa-brands fa-linkedin-in" class="brand" />
                     </span>
                 </div>
-
                 <div class="my-col">
                     <h4>
                         THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.

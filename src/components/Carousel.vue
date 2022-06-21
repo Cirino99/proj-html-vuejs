@@ -13,7 +13,7 @@
                     <br>
                     <span>{{ slide.textEditorial }}</span>
                 </p>
-                <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center mt-4">
                     <div class="circle" :class="active === 0 ? 'active' : ''"></div>
                     <div class="circle" :class="active === 1 ? 'active' : ''"></div>
                     <div class="circle" :class="active === 2 ? 'active' : ''"></div>
