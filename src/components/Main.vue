@@ -91,8 +91,8 @@
         <section id="photo-people">
             <img class="img-photo-people" src="../assets/img/h1-team-1a-700x700.jpg" alt="">
             <img class="img-photo-people" src="../assets/img/h1-team-2a.jpg" alt="">
-            <img class="img-photo-people" src="../assets/img/h1-team-3a.jpg" alt="">
             <img class="img-photo-people" src="../assets/img/h1-team-4a.jpg" alt="">
+            <img class="img-photo-people" src="../assets/img/h1-team-3a.jpg" alt="">
             <div class="icon-absolute d-flex justify-content-center align-items-center">
                 <img class="img-icon-absolute" src="../assets/svg/svg-4.svg" alt="">
             </div>
@@ -104,6 +104,57 @@
             <img src="../assets/img/h1-clients-img-1.png" alt="label">
             <img src="../assets/img/h1-clients-img-2.png" alt="label">
             <img src="../assets/img/h1-clients-img-5.png" alt="label">
+        </section>
+        <!-- choose flavor -->
+        <section id="choose-flavor">
+            <div class="d-flex justify-content-center align-items-center choose-flavor-txt">
+                <div class="d-flex flex-column text-center" id="text-choose-flavor">
+                    <span>CHOOSE YOUR FLAVOR</span>
+                    <h2>THE BEST PIZZA MENU IN TOWN</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit minima repellendus, nostrum, maxime
+                        quaerat aliquam aperiam culpa fuga quasi, commodi sed quae officiis architecto nobis. Pariatur
+                        neque
+                        qui natus delectus.</p>
+                </div>
+                <div class="icon-absolute d-flex justify-content-center align-items-center">
+                    <img class="img-icon-absolute" src="../assets/svg/svg-4.svg" alt="">
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center choose-flavor-img">
+                <div class="card-pizza d-flex flex-column text-center align-items-center">
+                    <img src="../assets/img/h3-product-img-1a-100x100.png" alt="">
+                    <h5>BISMARK</h5>
+                    <h5><span>$5.00</span> $30.00</h5>
+                </div>
+                <div class="card-pizza d-flex flex-column text-center align-items-center">
+                    <img src="../assets/img/h3-product-img-2a-150x150.png" alt="">
+                    <h5>FIORI DI ZUCCA</h5>
+                    <h5>$7.00 - $50.00</h5>
+                </div>
+                <div class="card-pizza d-flex flex-column text-center align-items-center">
+                    <img src="../assets/img/h3-product-img-6a-100x100.png" alt="">
+                    <h5>VALDOSTANA</h5>
+                    <h5>$55.00</h5>
+                </div>
+                <div class="card-pizza d-flex flex-column text-center align-items-center">
+                    <img src="../assets/img/h3-product-img-4a-150x150.png" alt="">
+                    <h5>PIZZA TARTUFATA</h5>
+                    <h5>$45.00</h5>
+                </div>
+                <div class="card-pizza d-flex flex-column text-center align-items-center">
+                    <img src="../assets/img/h3-product-img-5a-150x150.png" alt="">
+                    <h5>FRANCESCANA</h5>
+                    <h5>$25.00</h5>
+                </div>
+                <div class="card-pizza d-flex flex-column text-center align-items-center">
+                    <img src="../assets/img/h3-product-img-3a-150x150.png" alt="">
+                    <h5>CAMPAGNOLA</h5>
+                    <h5>$50.00 - $95.00</h5>
+                </div>
+                <div id="icona-choose-flavor">
+                    <img src="../assets/svg/svg-10.svg" alt="">
+                </div>
+            </div>
         </section>
     </main>
 </template>
@@ -147,7 +198,7 @@ main {
         border-radius: 50%;
         width: 40px;
         height: 40px;
-        padding: 0;
+        padding: 0 !important;
 
         .img-icon-absolute {
             width: auto;
@@ -279,7 +330,85 @@ main {
 
     #labels {
         background-color: #f6f7f2;
-        height: 300px;
+        min-height: 300px;
+    }
+
+    #choose-flavor {
+        margin: 10px 0;
+
+        .choose-flavor-txt {
+            padding-top: 70px;
+            padding-bottom: 40px;
+            position: relative;
+
+            #text-choose-flavor {
+                width: 35%;
+
+                span {
+                    color: #d2401e;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+
+                h2 {
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin: 15px 0;
+                }
+
+                p {
+                    color: #767676;
+                }
+            }
+        }
+
+        .choose-flavor-img {
+            padding-top: 40px;
+            padding-bottom: 70px;
+            position: relative;
+
+            .card-pizza {
+                width: calc(100% / 6);
+
+                img {
+                    width: 270px;
+                    height: auto;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #b68a2c;
+
+                    &:last-child {
+                        color: #d2401e;
+
+                        span {
+                            color: #cdcdcd;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+
+            #icona-choose-flavor {
+                background-color: #ee2852;
+                width: 40px;
+                height: 40px;
+                padding: 0 !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                img {
+                    width: 70%;
+                    height: auto;
+                }
+            }
+        }
     }
 }
 </style>
