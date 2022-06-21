@@ -19,7 +19,7 @@
         <section id="carousel">
             <Carousel :slides="carouselData" />
             <div class="icon-absolute d-flex justify-content-center align-items-center">
-                <img src="../assets/svg/svg-4.svg" alt="">
+                <img class="img-icon-absolute" src="../assets/svg/svg-4.svg" alt="">
             </div>
         </section>
         <!-- special -->
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="icon-absolute d-flex justify-content-center align-items-center">
-                        <img src="../assets/svg/svg-4.svg" alt="">
+                        <img class="img-icon-absolute" src="../assets/svg/svg-4.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -82,20 +82,28 @@
                     JUDGE! <br>
                 </h2>
                 <div class="icon-absolute d-flex justify-content-center align-items-center">
-                    <img src="../assets/svg/svg-4.svg" alt="">
+                    <img class="img-icon-absolute" src="../assets/svg/svg-4.svg" alt="">
                 </div>
             </div>
             <div id="mosaico-bottom"></div>
         </section>
         <!-- photo people -->
         <section id="photo-people">
-            <img src="../assets/img/h1-team-1a-700x700.jpg" alt="">
-            <img src="../assets/img/h1-team-2a.jpg" alt="">
-            <img src="../assets/img/h1-team-3a.jpg" alt="">
-            <img src="../assets/img/h1-team-4a.jpg" alt="">
+            <img class="img-photo-people" src="../assets/img/h1-team-1a-700x700.jpg" alt="">
+            <img class="img-photo-people" src="../assets/img/h1-team-2a.jpg" alt="">
+            <img class="img-photo-people" src="../assets/img/h1-team-3a.jpg" alt="">
+            <img class="img-photo-people" src="../assets/img/h1-team-4a.jpg" alt="">
             <div class="icon-absolute d-flex justify-content-center align-items-center">
-                <img src="../assets/svg/svg-4.svg" alt="">
+                <img class="img-icon-absolute" src="../assets/svg/svg-4.svg" alt="">
             </div>
+        </section>
+        <!-- labels -->
+        <section class="d-flex justify-content-center align-items-center flex-wrap" id="labels">
+            <img src="../assets/img/h1-clients-img-4.png" alt="label">
+            <img src="../assets/img/h1-clients-img-3.png" alt="label">
+            <img src="../assets/img/h1-clients-img-1.png" alt="label">
+            <img src="../assets/img/h1-clients-img-2.png" alt="label">
+            <img src="../assets/img/h1-clients-img-5.png" alt="label">
         </section>
     </main>
 </template>
@@ -137,9 +145,14 @@ main {
         right: 20px;
         background-color: #f6f7f2;
         border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         padding: 0;
+
+        .img-icon-absolute {
+            width: auto;
+            height: 50%;
+        }
     }
 
     #phrases-pizza {
@@ -258,10 +271,15 @@ main {
         margin: 10px 0;
         position: relative;
 
-        img {
+        .img-photo-people {
             width: 25%;
             height: auto;
         }
+    }
+
+    #labels {
+        background-color: #f6f7f2;
+        height: 300px;
     }
 }
 </style>
