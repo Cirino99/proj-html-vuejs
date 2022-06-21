@@ -87,6 +87,16 @@
             </div>
             <div id="mosaico-bottom"></div>
         </section>
+        <!-- photo people -->
+        <section id="photo-people">
+            <img src="../assets/img/h1-team-1a-700x700.jpg" alt="">
+            <img src="../assets/img/h1-team-2a.jpg" alt="">
+            <img src="../assets/img/h1-team-3a.jpg" alt="">
+            <img src="../assets/img/h1-team-4a.jpg" alt="">
+            <div class="icon-absolute d-flex justify-content-center align-items-center">
+                <img src="../assets/svg/svg-4.svg" alt="">
+            </div>
+        </section>
     </main>
 </template>
 
@@ -241,6 +251,16 @@ main {
             background-size: calc(100% - 300px);
             background-position: 50% 65%;
             height: 25%;
+        }
+    }
+
+    #photo-people {
+        margin: 10px 0;
+        position: relative;
+
+        img {
+            width: 25%;
+            height: auto;
         }
     }
 }
