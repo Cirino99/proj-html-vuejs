@@ -514,6 +514,7 @@ main {
 
                 img {
                     width: 240px;
+                    max-width: 80%;
                     height: auto;
                 }
 
