@@ -55,3 +55,9 @@ Calcolate poi il momento giusto per poter passare alla parte VueJs tenendo prese
 ### componenti installati
 
 - npm install bootstrap
+- Fontawesome
+- npm i --save @fortawesome/fontawesome-svg-core
+- npm i --save @fortawesome/free-solid-svg-icons
+- npm i --save @fortawesome/free-regular-svg-icons
+- npm i --save @fortawesome/free-brands-svg-icons
+- npm i --save @fortawesome/vue-fontawesome@latest-2
